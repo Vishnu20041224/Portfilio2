@@ -15,13 +15,13 @@ const Hero = () => {
 
   return (
     <section className={`relative w-full h-screen mx-auto flex justify-center items-center`}>
-      <div className={`absolute inset-0 top-[100px] max-w-7xl !mx-auto !sm:px-16 !px-6 flex flex-row items-start gap-5 z-10`}>
+      <div className={`absolute inset-0 top-[100px] max-w-7xl !mx-auto !sm:px-16 !px-6 flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
         </div>
 
-        <div> 
+        <div>
           <h1 className={`font-black text-white sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[98px] mt-2`}>
             Hi, I'm <span className='text-[#915EFF]'>Vishnu</span>
           </h1>
@@ -32,22 +32,24 @@ const Hero = () => {
         </div>
       </div>
 
-      <ComputersCanvas />
+      <div className="sm:w-full w-[450px] h-[450px] sm:h-screen translate-y-24 transform sm:translate-y-0">
+        <ComputersCanvas />
+      </div>
 
-      <div  className='z-10 absolute xs:bottom-5 bottom-7 w-full flex justify-center items-center cursor-pointer'>
-          <div className='w-[20px] h-[38px] sm:w-[25px] sm:h-[44px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 14, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 bg-white rounded-full mb-1'
-            />
-          </div>
+      <div className='z-10 absolute xs:bottom-5 bottom-7 w-full flex justify-center items-center cursor-pointer'>
+        <div className='w-[20px] h-[38px] sm:w-[25px] sm:h-[44px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+          <motion.div
+            animate={{
+              y: [0, 14, 0],
+            }}
+            transition={{
+              duration: 1.5,
+              repeat: Infinity,
+              repeatType: "loop",
+            }}
+            className='w-3 h-3 bg-white rounded-full mb-1'
+          />
+        </div>
       </div>
 
     </section>
