@@ -37,9 +37,10 @@ const Contact = () => {
         "template_epekof6",
         {
           from_name: form.name,
+          title:"VS Portfilio",
           to_name: "Vishnu",
           from_email: form.email,
-          to_email: "rhvishnushankar@gmail.com",
+          email: "rhvishnushankar@gmail.com",
           message: form.message,
         },
         "rFwoyScnDdUuygMJm"
@@ -48,7 +49,7 @@ const Contact = () => {
         () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
-
+          console.log(form)
           setForm({
             name: "",
             email: "",
