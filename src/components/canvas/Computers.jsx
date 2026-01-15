@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 import CanvasLoader from "../Loader";
 
-const Computer = ({isMobile} ) => {
+const Computer = ({ isMobile }) => {
   const computer = useGLTF("./desktop_pc/scene.gltf");
 
 
@@ -24,7 +24,7 @@ const Computer = ({isMobile} ) => {
       <primitive
         object={computer.scene}
         scale={isMobile ? 0.55 : 0.75}
-        position={isMobile ? [0, -2.5, -1] : [0, -3.25, -2.3]}
+        position={isMobile ? [0, -2.5, -1] : [0, -3.55, -1.3]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -65,7 +65,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computer isMobile={isMobile}/>
+        <Computer isMobile={isMobile} />
       </Suspense>
 
       <Preload all />

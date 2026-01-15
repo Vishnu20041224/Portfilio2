@@ -32,10 +32,10 @@ const ProjectCard = ({
             <img
               src={image}
               alt='project_image'
-              className='  w-full h-full object-cover rounded-2xl'
+              className='w-full h-full object-contain aspect-square rounded-2xl'
             />
 
-            <div className='absolute inset-0 flex justify-end !m-3 card-img_hover'>
+            <div className='absolute inset-0 flex justify-end !mx-3 card-img_hover'>
               <div
                 onClick={() => window.open(source_code_link, "_blank")}
                 className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
@@ -90,7 +90,7 @@ const Works = () => {
           </motion.p>
         </div>
 
-        <div className='!mx-auto flex flex-wrap gap-7 justify-center items-center'>
+        <div className='!mx-auto flex flex-wrap gap-7 justify-center items-start'>
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           ))}

@@ -52,11 +52,10 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='!sm:px-16 !px-6 mt-4 text-white text-[17px] max-w-3xl leading-[30px]'
       >
-        I'm a Junior Web Developer with experience in 
-        JavaScript, and frameworks like React, Node.js, REST APIs, and I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, responsive, dynamic web applications and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+I am a MERN Stack Developer experienced in building scalable, responsive full-stack web applications using MongoDB, Express.js, React.js, and Node.js.
+Proficient in front-end development with HTML5, CSS3, JavaScript (ES6+), Tailwind CSS, Bootstrap 5, React.js, and Redux.
+Skilled in developing RESTful APIs, handling backend logic, authentication, database management, and seamless data integration.
+A quick learner and collaborative team player passionate about writing clean code and delivering real-world solutions.      </motion.p>
 
       <div className='!mt-20 !flex justify-center items-center !flex-wrap gap-10'>
         {services.map((service, index) => (
