@@ -258,8 +258,8 @@ const projects = [
 
     ],
     image: tripguide,
-    source_code_link: "https://github.com/Vishnu20041224/Gym",
-    project_link: "https://vishnu-gym.vercel.app/",
+    source_code_link: "https://github.com/Vishnu20041224/vishnu-ecommerce/tree/main",
+    project_link: "https://vishnu-ecommerce-frontend.onrender.com/",
   },
   {
     name: "Gym Management System",
@@ -301,8 +301,9 @@ const projects = [
 
     ],
     image: jobit,
-    source_code_link: "https://github.com/Vishnu20041224/vishnu-ecommerce/tree/main",
-    project_link: "https://vishnu-ecommerce-frontend.onrender.com/",
+
+    source_code_link: "https://github.com/Vishnu20041224/Gym",
+    project_link: "https://vishnu-gym.vercel.app/",
 
   },
   // {
