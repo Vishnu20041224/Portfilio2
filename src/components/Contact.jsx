@@ -48,7 +48,7 @@ const Contact = () => {
         {
           from_name: form.name,
           title: "VS Portfilio",
-          email: form.email,      // ✅ correct
+          from_email: form.email,      // ✅ correct
           message: form.message,
         },
         "rFwoyScnDdUuygMJm"
